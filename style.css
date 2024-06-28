@@ -1,0 +1,264 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+    background-color: #f7f5f2;
+}
+
+.navbar {
+    background-color: #b2744c;
+}
+
+.logo {
+    font-weight: 800;
+}
+
+#submit {
+    background-color: #000000;
+    color: white;
+    border: transparent;
+}
+
+.home-content {
+    background-image: url(images/bg.png);
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+}
+
+.transparent-jumbotron {
+    background-color: transparent !important;
+    color: white; /* Ensure text is visible if background is transparent */
+}
+
+.jumbotron .container {
+    background: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background to container for better text readability */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.section1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.section1 h1 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.section1 h1 span {
+    color: #b2744c;
+}
+
+.section-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.img-container, .text-container {
+    flex: 1 1 300px; /* Allows each container to grow and shrink, minimum width 300px */
+    max-width: 500px; /* Ensures the maximum width for larger screens */
+}
+
+.img-thumbnail {
+    border-radius: 20px;
+    width: 100%; /* Ensures the image takes the full width of the container */
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.img-thumbnail:hover {
+    transform: translateY(-10px);
+}
+
+.card-body {
+    text-align: left; /* Align text to the left */
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #b2744c;
+}
+
+.card-text {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #b2744c;
+    border-color: #b2744c;
+}
+
+.btn-primary:hover {
+    background-color: #8e583a;
+    border-color: #8e583a;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .section-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-container, .text-container {
+        max-width: 100%;
+    }
+
+    .card-body {
+        text-align: center; /* Center text on smaller screens */
+    }
+}
+
+#card {
+    height: auto;
+    width: auto;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.categories h2 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #b2744c;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adjusts the gap between images */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.content img {
+    border-radius: 20px;
+    width: 300px; /* Fixed width for each image */
+    height: 200px; /* Fixed height for each image */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    transition: all 0.5s ease;
+}
+
+.content img:hover {
+    transform: translateY(-10px);
+}
+
+.products h2 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 30px;
+    color: #b2744c;
+}
+
+.products-contents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.card {
+    margin: 20px;
+    color: #b2744c;
+}
+
+.gallery h2 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.gallery h2 span {
+    color: #b2744c;
+}
+
+.gallery-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adjusts the gap between images */
+}
+
+.gallery-content img {
+    border-radius: 20px;
+    width: 300px; /* Fixed width for each image */
+    height: auto; /* Maintains aspect ratio */
+    margin-bottom: 20px;
+    transition: all 0.5s ease;
+}
+
+.gallery-content img:hover {
+    transform: translateY(-10px);
+}
+.contact h2 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.contact h2 span {
+    color: #b2744c;
+}
+
+.contact-blog {
+    color: #f7f5f2;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    background-color: #b2744c;
+    max-width: 1300px; /* Set a max-width for better responsiveness */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add some shadow for better appearance */
+}
+
+.contact-blog .btn {
+    background: #000000;
+    border-color: #000000;
+}
+
+.contact-blog .btn:hover {
+    background: #333333;
+    border-color: #333333;
+}
+
+@media (max-width: 768px) {
+    .contact-blog {
+        padding: 30px 10px; /* Reduce padding on smaller screens */
+        margin: 20px; /* Add some margin */
+    }
+    
+    .contact h2 {
+        font-size: 24px; /* Adjust the font size for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-blog {
+        padding: 20px 5px; /* Further reduce padding on very small screens */
+    }
+    
+    .contact h2 {
+        font-size: 20px; /* Further adjust the font size for very small screens */
+    }
+}
+
+footer{
+    background-color:#b2744c;
+    text-align: center;
+    color: white ;
+    margin-top: 50px;
+}
