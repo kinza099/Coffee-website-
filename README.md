@@ -48,6 +48,7 @@ This project is a static website, so you can simply open the `index.html` file i
 
 Here is an overview of the project's file structure:
 
+<pre>
 coffeeshop/
 ├── images/ # Contains all the image files used in the project
 │ ├── about_us.png
@@ -66,6 +67,7 @@ coffeeshop/
 ├── index.html # The main HTML file
 ├── style.css # Custom CSS styles
 ├── README.md # This README file
+</pre>
 
 
 ## Contributing
